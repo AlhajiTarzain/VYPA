@@ -12,6 +12,7 @@ body {
     top: 0;
     left: 0;
     background-color: #661b1b; /* Dark background */
+    background-image: url(bg.jpg);
     padding-top: 20px; /* Padding on top */
 }
 
@@ -120,4 +121,41 @@ body {
 
 .driver-form input[type="submit"]:hover {
     background-color: #45a049;
+}
+.content {
+    flex: 1;
+    padding: 20px;
+}
+
+.content h1 {
+    color: #c02f2f;
+}
+
+.section {
+    margin-bottom: 30px;
+}
+
+.summary-boxes {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.summary-box {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.summary-box h2 {
+    color: #333;
+}
+
+.summary-box p {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 10px;
 }
