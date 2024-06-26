@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Page with Side Menu</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="add_driver.html">Driver</a></li>
+            <li><a href="add_car.html">Cars</a></li>
+            <li><a href="">Units</a></li>
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This is the main content of the page.</p>
+        <h1>Add Driver Details</h1>
+        
+        <form action="submit_driver_details.php" method="POST" enctype="multipart/form-data" class="driver-form">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+
+            <label for="service">Arm of Service:</label>
+            <select id="service" name="service" required>
+                <option value="Army">Army</option>
+                <option value="Navy">Navy</option>
+                <option value="Air Force">Air Force</option>
+                <!-- Add more services as needed -->
+            </select>
+
+            <label for="unit">Unit:</label>
+            <input type="text" id="unit" name="unit">
+
+            <label for="photo">Upload Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="carTypes">Types of Cars You Can Drive:</label><br>
+            <input type="checkbox" id="carType1" name="carTypes[]" value="Sedan">
+            <label for="carType1"> Sedan</label><br>
+            <input type="checkbox" id="carType2" name="carTypes[]" value="Pickup">
+            <label for="carType2"> Pickup</label><br>
+            <input type="checkbox" id="carType3" name="carTypes[]" value="SUV">
+            <label for="carType3"> SUV</label><br>
+            <!-- Add more checkboxes for other car types as needed -->
+
+            <label for="photo">Upload DVLA license:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required>
+
+            <label for="license">Upload Military License:</label>
+            <input type="file" id="license" name="license" accept="image/*" required>
+
+        </form><input type="submit" value="Submit">
+    </div>
+</body>
+</html>

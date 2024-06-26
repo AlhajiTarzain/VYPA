@@ -1,0 +1,123 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar {
+    height: 100vh; /* Full height */
+    width: 250px; /* Sidebar width */
+    position: fixed; /* Fixed sidebar */
+    top: 0;
+    left: 0;
+    background-color: #661b1b; /* Dark background */
+    padding-top: 20px; /* Padding on top */
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style-type: none; /* Remove bullets */
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar ul li a {
+    color: white
+}
+
+.content {
+        margin-left: 250px; /* Same width as the sidebar */
+        padding: 20px;
+        flex-grow: 1; /* Ensure content takes the remaining width */
+        overflow: auto; /* Handle overflow content */
+    }
+
+    .fleet-form {
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin-top: 20px;
+    }
+    
+    .fleet-form label {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    
+    .fleet-form input[type="text"],
+    .fleet-form input[type="number"] {
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    .fleet-form input[type="submit"] {
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    .fleet-form input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+
+  /*driver css*/
+    h1 {
+    text-align: center;
+}
+
+.driver-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.driver-form label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.driver-form input[type="text"],
+.driver-form input[type="number"],
+.driver-form select,
+.driver-form input[type="file"] {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.driver-form input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.driver-form input[type="submit"]:hover {
+    background-color: #45a049;
+}
