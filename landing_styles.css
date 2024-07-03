@@ -7,8 +7,8 @@ body, html {
 
 /* Header Styles */
 header {
-    background-color: #333;
-    color: #fff;
+    background-color: #2a3324;
+    color: #dedda9;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -29,7 +29,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #dedda9;
     text-decoration: none;
     font-size: 18px;
 }
@@ -45,7 +45,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: #f0f0f0;
+    background-color: #d4d38c;
     padding: 100px 20px;
     min-height: 100vh;
 }
@@ -53,6 +53,7 @@ nav ul li a:hover {
 .cover-image {
     max-width: 100%;
     height: auto;
+    border: 2px solid olive
 }
 
 .intro-content {
@@ -70,8 +71,8 @@ nav ul li a:hover {
 }
 
 .button {
-    background-color: #661b1b;
-    color: #fff;
+    background-color: #2a3324;
+    color: beige;
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 5px;
@@ -84,7 +85,7 @@ nav ul li a:hover {
 
 /* Feature Section Styles */
 #features {
-    background-color: #fff;
+    background-color: #494e22;
     padding: 50px 20px;
     text-align: center;
 }
@@ -107,12 +108,12 @@ nav ul li a:hover {
 
 .feature p {
     font-size: 1em;
-    color: #666;
+    color: beige;
 }
 
 /* About Section Styles */
 #about {
-    background-color: #f0f0f0;
+    background-color: #444324;
     padding: 50px 20px;
     text-align: center;
 }
@@ -139,7 +140,7 @@ nav ul li a:hover {
 
 .team-member a {
     margin: 0 10px;
-    color: #661b1b;
+    color: beige;
     text-decoration: none;
     font-size: 1em;
 }
@@ -150,7 +151,7 @@ nav ul li a:hover {
 
 /* Links Section Styles */
 #links {
-    background-color: #fff;
+    background-color: #2a3324;
     padding: 50px 20px;
     text-align: center;
 }
@@ -165,10 +166,14 @@ nav ul li a:hover {
 }
 
 #links a {
-    color: #661b1b;
+    color: beige;
     text-decoration: none;
 }
 
 #links a:hover {
     text-decoration: underline;
+}
+
+.abot {
+    color: beige;
 }
