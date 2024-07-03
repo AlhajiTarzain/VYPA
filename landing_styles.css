@@ -1,0 +1,174 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Intro Section Styles */
+#intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #f0f0f0;
+    padding: 100px 20px;
+    min-height: 100vh;
+}
+
+.cover-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.intro-content {
+    max-width: 600px;
+}
+
+.intro-content h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro-content p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #661b1b;
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.button:hover {
+    background-color: #551515;
+}
+
+/* Feature Section Styles */
+#features {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.feature {
+    display: inline-block;
+    margin: 20px;
+    max-width: 300px;
+}
+
+.feature img {
+    max-width: 100%;
+    height: auto;
+}
+
+.feature h3 {
+    font-size: 1.5em;
+    margin-top: 10px;
+}
+
+.feature p {
+    font-size: 1em;
+    color: #666;
+}
+
+/* About Section Styles */
+#about {
+    background-color: #f0f0f0;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#about p {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.team {
+    margin-top: 30px;
+}
+
+.team h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.team-member a {
+    margin: 0 10px;
+    color: #661b1b;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.team-member a:hover {
+    text-decoration: underline;
+}
+
+/* Links Section Styles */
+#links {
+    background-color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#links h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+#links p {
+    font-size: 1.2em;
+}
+
+#links a {
+    color: #661b1b;
+    text-decoration: none;
+}
+
+#links a:hover {
+    text-decoration: underline;
+}
