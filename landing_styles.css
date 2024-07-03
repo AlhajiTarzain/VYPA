@@ -177,3 +177,17 @@ nav ul li a:hover {
 .abot {
     color: beige;
 }
+
+.video-container {
+    margin-top: 30px;
+    text-align: center;
+    background: #d4d38c;
+}
+
+.video-container h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+.pv {
+    background-color: beige;
+}
