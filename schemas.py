@@ -1,3 +1,5 @@
+from datetime import date
+from typing import Optional
 from pydantic import BaseModel, EmailStr
 
 class UserBase(BaseModel):
@@ -31,3 +33,19 @@ class Car(CarBase):
 
     class Config:
         orm_mode = True
+
+class DriverBase(BaseModel):
+    first_name: str
+    last_name: str
+    date_of_birth: date
+    arm_of_service: str
+    car_types: str
+    photo_upload: Optional[str] = None
+    driver_license_upload: Optional[str] = None
+    military_license_upload: Optional[str] = None
+
+class DriverCreate(DriverBase):
+    pass
+
+class Driver(DriverBase):
+    id: int

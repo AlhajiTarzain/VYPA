@@ -42,3 +42,17 @@ def get_cars(db: Session, skip: int = 0, limit: int = 10):
 
 def get_car_count(db: Session):
     return db.query(models.Car).count()
+
+
+def create_driver(db: Session, driver: schemas.DriverCreate):
+    db_driver = models.Driver(**driver.dict())
+    db.add(db_driver)
+    db.commit()
+    db.refresh(db_driver)
+    return db_driver
+
+def get_drivers(db: Session, skip: int = 0, limit: int = 10):
+    return db.query(models.Driver).offset(skip).limit(limit).all()
+
+def get_driver_count(db: Session):
+    return db.query(models.Driver).count()
